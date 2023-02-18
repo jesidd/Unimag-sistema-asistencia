@@ -1,0 +1,73 @@
+
+.bodyy{
+    overflow: hidden;
+}
+
+.container-header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+    background-color: #444791;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.nameapp{
+    width: 10%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-end{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-confing{
+    display: flex;
+
+}
+
+.logo-user{
+    height: 40px;
+}
+
+.container-principal{
+    position: relative;
+    display: flex;
+    overflow-y: scroll !important;
+    top: 109px;
+}
+.container-flotante{
+    width: 5%;
+}
+
+.container-main{
+    height: 500px;
+    width: 95%;
+}
+
+.container-main-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-main-ul > li {
+    width: 20%;
+    height: 120px;
+	background-color: #FFF;
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+}
+
+.name-student:before{
+    background: url(https://img.icons8.com/bubbles/50/null/user.png)no-repeat;
+}
