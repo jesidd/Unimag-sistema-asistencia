@@ -1,6 +1,7 @@
 
 .bodyy{
     overflow: hidden;
+    background-color: #f2f5f7;
 }
 
 .container-header{
@@ -41,8 +42,24 @@
     position: relative;
     display: flex;
     overflow-y: scroll !important;
+    transition: all 0.6s;
     top: 109px;
 }
+
+.container-principal::-webkit-scrollbar{
+    height: 100px;
+    width: 6px;
+}
+
+.container-principal:active::-webkit-scrollbar{
+    width: 8px;
+}
+
+.container-principal::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,.5);
+    border-radius: 0.8rem;
+}
+
 .container-flotante{
     width: 5%;
 }
