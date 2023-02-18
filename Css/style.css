@@ -65,7 +65,7 @@
     order: -1;
     position: absolute;
     top: 50px;
-    height: 570px;
+    height: 610px;
     width: 5%;
     overflow: none;
     box-shadow: -10px 0px 10px -5px #d0d8dd inset;
@@ -78,7 +78,7 @@
     position: relative;
     margin: 0 auto 0 4%;
     top: 109px;
-    height: 600px;
+    height: 635px;
     width: 95%;
 }
 
