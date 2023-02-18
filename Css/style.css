@@ -1,6 +1,6 @@
 
 .bodyy{
-    overflow: hidden;
+    overflow: none;
     background-color: #f2f5f7;
 }
 
@@ -43,7 +43,6 @@
     display: flex;
     overflow-y: scroll !important;
     transition: all 0.6s;
-    top: 109px;
 }
 
 .container-principal::-webkit-scrollbar{
@@ -61,11 +60,25 @@
 }
 
 .container-flotante{
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    position: absolute;
+    top: 50px;
+    height: 570px;
     width: 5%;
+    overflow: none;
+    box-shadow: -10px 0px 10px -5px #d0d8dd inset;
+    background-color: #eaeef1;
 }
 
+
+
 .container-main{
-    height: 500px;
+    position: relative;
+    margin: 0 auto 0 4%;
+    top: 109px;
+    height: 600px;
     width: 95%;
 }
 
