@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Css/resset.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Home</title>
 </head>
-<body>
-    <a style="position: absolute; left: 40%; top: 50%;" href="Asistencia.html">Da click aqui - me ha dado pereza hacer el home :c</a>
-</body>
+<body class="container-index">
+    <div class="container-fondo">
+        <img class="logo-fondo" src="Imagenes/fondo login.jpg">
+    </div>
+
+    <section class="login">
+        <img  class="logo-index-campus" src="Imagenes/Campus logo.jpg">
+        <span class="titulo-index"><h1>Campus virtual</h1></span>
+        <span class="titulo-index-2"><h2>Ingreso estudiante</h2></span>
+        <div>
+            <form  class="datos-users" action="Asistencia.html">
+                <span class="usuario">
+                    <label for="cod"><img src="Imagenes/user.png"/></label>
+                    <input type="tel" id="cod" placeholder="Codigo estudiantil" required>
+                </span>
+            
+                <span class="contrasena">
+                    <label for="pass"><img src="Imagenes/key.png"/></label>
+                    <input type="password" id="pass" placeholder="Contraseña" required>
+                </span>
+
+                <span class="botones-login">
+                    <button type="submit" class="entrar"><h3 class="texto-bt">Entrar</h3></button>
+                </span>
+
+            </form>
+        </div>
+    </section>
 </html>

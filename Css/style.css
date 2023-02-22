@@ -1,4 +1,100 @@
 
+.container-index{
+    display: flex;
+    overflow: hidden;
+}
+
+.container-fondo{
+    width: 60%;
+    height: 100%;
+}
+
+.logo-fondo{
+    width: 100%;
+    height: 100hv;
+}
+
+.login{
+    display: grid;
+    grid-template-rows: 18% 16% 10% auto;
+    width: 40%;
+    height: 100hv;
+    background-color: #444791;
+}
+
+.logo-index-campus{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 70px;
+}
+
+.titulo-index{
+    position: relative;
+    width: 95%;
+    left: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFF;
+
+}
+
+.titulo-index-2{
+    position: relative;
+    width: 95%;
+    font-size: 40px;
+    font-weight: 400;
+    color: #FFF;
+    left: 20px;
+}
+
+.datos-users{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    width: 60%;
+}
+
+.usuario, .contrasena{
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-color: #FFF;
+}
+
+#cod, #pass{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 85%;
+}
+
+.botones-login{
+ 
+}
+
+.entrar{
+    width: 40%;
+    height: 35px;
+    margin-top: 8px;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: rgb(116, 116, 116);
+    background-color: #FFF;
+    transition: 1s all;
+}
+
+.entrar:active{
+    transform: scale(0.93);
+}
+
+
+/* style para asistencia*/
+
 *{
     font-family: 'Sofia Sans', sans-serif;
 }
@@ -93,8 +189,8 @@
     background-color: #eaeef1;
 }
 
-.logo-notifications,.logo-chat,.logo-asistencia{
-    width: 60%;
+.logo-nofications,.logo-chat,.logo-asistencia{
+    width: 50%;
     
 }
 
@@ -119,18 +215,33 @@
 
 .container-main-ul > li {
     width: 20%;
-    height: 120px;
+    height: 130px;
 	background-color: #FFF;
+    font-size: 20px;
 	text-align: center;
+    border-radius: 8px;
 	margin: 1%;
 	transition: .3s;
 	box-shadow: 2px 2px 2px #CCC;
+    font-weight: bold;
 }
+
+.container-main-ul li > img{
+    width: 60px;
+}
+
+.container-main-ul li >:nth-child(3){
+    color: gray;
+    font-size: 12px;
+} 
+
 
 .asist{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(80, 80, 80);
+    font-size: 18px;
     margin-top: 5px;
     gap: 5px;
 }
