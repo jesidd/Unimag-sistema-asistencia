@@ -1,4 +1,8 @@
 
+*{
+    font-family: 'Sofia Sans', sans-serif;
+}
+
 .bodyy{
     overflow: hidden;
     background-color: #f2f5f7;
@@ -14,13 +18,19 @@
     color: #fff;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Sofia Sans', sans-serif;
 }
 
 .nameapp{
-    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 26px;
+}
+
+.logo-campus{
+    width: 45px;
 }
 
 .container-end{
@@ -45,6 +55,15 @@
     transition: all 0.6s;
 }
 
+.container-titulos{
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    margin-left: 42px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .container-principal::-webkit-scrollbar{
     height: 100px;
     width: 6px;
@@ -65,20 +84,30 @@
     order: -1;
     position: absolute;
     top: 50px;
-    height: 610px;
+    height: 100vh;
     width: 5%;
+    justify-content: space-around;
+    align-items: center;
     overflow: none;
     box-shadow: -10px 0px 10px -5px #d0d8dd inset;
     background-color: #eaeef1;
 }
 
+.logo-notifications,.logo-chat,.logo-asistencia{
+    width: 60%;
+    
+}
 
+.logo-flotante:hover(){
+
+   
+}
 
 .container-main{
     position: relative;
     margin: 0 auto 0 4%;
     top: 109px;
-    height: 635px;
+    height: 100vh;
     width: 95%;
 }
 
@@ -98,6 +127,44 @@
 	box-shadow: 2px 2px 2px #CCC;
 }
 
+.asist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.check{
+    width: 18px;
+}
+
+
 .name-student:before{
     background: url(https://img.icons8.com/bubbles/50/null/user.png)no-repeat;
 }
+
+.container-main-ul > :hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1350px){
+
+    .container-header{
+        height: 70px;
+    }
+
+    .container-flotante{
+        top: 70px;
+        width: 80px;
+    }
+
+    .container-titulos{
+        top: 92px;
+        left: 80px;
+        margin-left: 42px;
+    }
+}
+
+    
