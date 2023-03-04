@@ -21,3 +21,15 @@ function ejecutar(evento){
 
     
 }
+
+var contt = 0;
+
+function ejecutarFormulario(){
+    if(contt == 0){
+        mostrar(".container-formulario");
+        contt = 1;
+    }else{
+        ocultar(".container-formulario");
+        contt = 0;
+    }
+}

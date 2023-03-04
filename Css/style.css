@@ -249,8 +249,85 @@
     color: black;
 }
 
-.formulario:hover{
+.icon-formulario:hover{
     color: blue;
+}
+
+.container-formulario{
+    display: none;
+    position: absolute;
+    z-index: 888;
+    top: 17%;
+    left: 58%;
+    width: 510px;
+    height: 180px;
+    background-color: #f2f5f7;
+    border-radius: 10px;
+    box-shadow: -2px 2px 20px #cecbcb;
+}
+
+.container-formulario-contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.botones-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrada-fecha{
+    width: 60%;
+    height: 25px;
+}
+
+.boton-container{
+    display: flex;
+    width: 43%;
+    margin: 15px 0;
+    outline-offset: none;
+    align-items:center;
+    border: none;
+    background:none;
+    box-sizing: border-box;
+}
+
+.boton-container-enviar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding: 5px 0;
+    color: #FFF;
+    background-color: #005CAB;
+    border-radius: 8px;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.boton-container-enviar:hover{
+    background-color: #0183EF;
+}
+
+.boton-container-enviar:active{
+    transform: scale(95%);
+}
+
+.container-formulario-contenido{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.head-info{
+    padding: 20px 0 20px 15px;
+}
+
+.container-formulario-contenido label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #CCC;
 }
 
 .container-principal::-webkit-scrollbar{

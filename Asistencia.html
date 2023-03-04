@@ -80,14 +80,29 @@
     <main class="container-principal">
         <div class="container-titulos">
             <h2>Lista Asitencia</h2>
-            <div class="container-principal-caja"><button class="container-titulos-caja-boton">
-                <span
-                        class="material-symbols-outlined formulario">
+            <div class="container-principal-caja">
+                <button class="container-titulos-caja-boton" onclick="ejecutarFormulario()">
+                    <span class="material-symbols-outlined icon-formulario">
                         event_upcoming
                     </span>
                 </button>
             </div>
         </div>
+
+        <div class="container-formulario">
+            <form action="" class="container-formulario-contenido">
+                <div class="head-info">
+                    <h3>Guardado de asistencia</h3>
+                    <label for="Fecha">Selecione La Fecha</label>
+                </div>
+                <div class="botones-form">
+                    <input type="date" id="Fecha" class="entrada-fecha" required>
+                    </input>
+                    <button class="boton-container" onclick="ejecutarFormulario()"><span class="boton-container-enviar">enviar</span></button>
+                </div>
+            </form>
+        </div>
+
         <div class="container-main">
             <ul class="container-main-ul">
                 <li>
