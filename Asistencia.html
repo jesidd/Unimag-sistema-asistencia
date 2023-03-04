@@ -9,8 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Control de Asistencia estudiantil</title>
 </head>
 
 <body class="bodyy">
@@ -24,21 +28,65 @@
             <nav class="container-config">
                 <h1>...</h1>
             </nav>
-            <img alt="Imagen de usuario" class="logo-user" src="Imagenes/logo-user.png">
+            <button onclick="ejecutar()" class="boton-info"><img alt="Imagen de usuario" class="logo-user"
+                    src="Imagenes/logo-user.png"></button>
+            <div id="info">
+                <div class="info-Usuario">
+                    <img src="Imagenes/logo-user.png" alt="Foto de perfil del Usuario" class="foto-usuario">
+                    <article class="info-Usuario-container">
+                        <span>Johan Alberto Robles Solano</span>
+                        <br>
+                        <a href="mailto:jrobles@unimagdalena.edu.co" class="info-Usuario-correo">
+                            <div class="icono-correo">
+                                <span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                            </div>
+                            jrobles@unimagdalena.edu.co
+                        </a>
+                    </article>
+                </div>
+
+                <ul class="opcion-usuario">
+                    <li><a href="#">Administrar Cuenta</a></li>
+                    <li><a href="./index.html">Cerrar Seccion</a></li>
+                </ul>
+
+            </div>
+
         </div>
 
         <div class="container-flotante">
-            <img class="logo-nofications"
-                src="https://img.icons8.com/fluency-systems-regular/48/null/appointment-reminders--v1.png" />
-            <img class="logo-asistencia" src="https://img.icons8.com/ios-glyphs/30/null/todo-list--v1.png" />
-            <img class="logo-chat" src="https://img.icons8.com/pulsar-line/48/null/speech-bubble.png" />
-
+            <nav class="container-flotante-listaNavegacion">
+                <a>
+                    <span class="material-symbols-outlined icon">
+                        notifications
+                    </span>
+                </a>
+                <a href="./Grupos.html">
+                    <span class="material-symbols-outlined icon">
+                        groups
+                    </span>
+                </a>
+                <a>
+                    <span class="material-symbols-outlined icon">
+                        forum
+                    </span>
+                </a>
+            </nav>
         </div>
     </header>
 
     <main class="container-principal">
         <div class="container-titulos">
             <h2>Lista Asitencia</h2>
+            <div class="container-principal-caja"><button class="container-titulos-caja-boton">
+                <span
+                        class="material-symbols-outlined formulario">
+                        event_upcoming
+                    </span>
+                </button>
+            </div>
         </div>
         <div class="container-main">
             <ul class="container-main-ul">
@@ -238,7 +286,7 @@
                     <p>Apellidos</p>
                     <div class="asist">
                         <img class="check" src="https://img.icons8.com/fluency/48/null/delete-sign.png" />
-                        <p>No asistió</p>
+                        <p>Inactivo</p>
                     </div>
                 </li>
                 <li>
@@ -261,16 +309,6 @@
                 </li>
                 <li>
                     <img src="https://img.icons8.com/bubbles/50/null/user.png" />
-                    <p>Nombre Usuario</p>
-                    <p>Apellidos</p>
-                    <div class="asist">
-                        <img class="check" alt="imagen de confirmacion"
-                            src="https://img.icons8.com/fluency/48/null/checkmark.png" />
-                        <p>Asistió</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="https://img.icons8.com/bubbles/50/null/user.png" />
                     <p>GEOVANYS SMITH</p>
                     <p>VARGAS HERNANDEZ</p>
                     <div class="asist">
@@ -283,9 +321,17 @@
                     <p>Nombre Usuario</p>
                     <p>Apellidos</p>
                     <div class="asist">
-                        <img class="check" alt="imagen de confirmacion"
-                            src="https://img.icons8.com/fluency/48/null/checkmark.png" />
-                        <p>Asistió</p>
+                        <img class="check" src="https://img.icons8.com/emoji/48/null/warning-emoji.png" />
+                        <p>Inactivo</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="check" src="https://img.icons8.com/bubbles/50/null/user.png" />
+                    <p>Nombre Usuario</p>
+                    <p>Apellidos</p>
+                    <div class="asist">
+                        <img class="check" src="https://img.icons8.com/emoji/48/null/warning-emoji.png" />
+                        <p>Inactivo</p>
                     </div>
                 </li>
                 <li>
@@ -293,9 +339,8 @@
                     <p>Nombre Usuario</p>
                     <p>Apellidos</p>
                     <div class="asist">
-                        <img class="check" alt="imagen de confirmacion"
-                            src="https://img.icons8.com/fluency/48/null/checkmark.png" />
-                        <p>Asistió</p>
+                        <img class="check" src="https://img.icons8.com/emoji/48/null/warning-emoji.png" />
+                        <p>Inactivo</p>
                     </div>
                 </li>
                 <li>
@@ -303,8 +348,8 @@
                     <p>Nombre Usuario</p>
                     <p>Apellidos</p>
                     <div class="asist">
-                        <img class="check" src="https://img.icons8.com/fluency/48/null/delete-sign.png" />
-                        <p>No asistió</p>
+                        <img class="check" src="https://img.icons8.com/emoji/48/null/warning-emoji.png" />
+                        <p>Inactivo</p>
                     </div>
                 </li>
             </ul>
@@ -313,3 +358,5 @@
 </body>
 
 </html>
+
+<script src="Js/main.js"></script>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Css/resset.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Asistencia estudiantil</title>
+</head>
+
+<body class="bodyy">
+    <header class="container-header">
+        <div class="nameapp">
+            <img class="logo-campus" src="Imagenes/Campus logo.jpg" alt="logo campus virtual">
+            <h1>Campus virtual</h1>
+        </div>
+
+        <div class="container-end">
+            <nav class="container-config">
+                <h1>...</h1>
+            </nav>
+            <button onclick="ejecutar()" class="boton-info"><img alt="Imagen de usuario" class="logo-user"
+                    src="Imagenes/logo-user.png"></button>
+            <div id="info">
+                <div class="info-Usuario">
+                    <img src="Imagenes/logo-user.png" alt="Foto de perfil del Usuario" class="foto-usuario">
+                    <article class="info-Usuario-container">
+                        <span>Johan Alberto Robles Solano</span>
+                        <br>
+                        <a href="mailto:jrobles@unimagdalena.edu.co" class="info-Usuario-correo">
+                            <div class="icono-correo">
+                                <span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                            </div>
+                            jrobles@unimagdalena.edu.co
+                        </a>
+                    </article>
+                </div>
+
+                <ul class="opcion-usuario">
+                    <li><a href="#">Administrar Cuenta</a></li>
+                    <li><a href="./index.html">Cerrar Seccion</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="container-flotante">
+            <nav class="container-flotante-listaNavegacion">
+                <a>
+                    <span class="material-symbols-outlined icon">
+                        notifications
+                    </span>
+                </a>
+                <a href="./Grupos.html">
+                    <span class="material-symbols-outlined icon">
+                        groups
+                    </span>
+                </a>
+                <a>
+                    <span class="material-symbols-outlined icon">
+                        forum
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="container-main-grupos">
+        <div class="container-tabla">
+            <table class="container-tabla-tabla">
+                <thead class="filas head-tabla">
+                    <th class="columnas">#</th>
+                    <th class="columnas"><span class="columnas-Grupos">GRUPOS</span></td>
+                    <th class="columnas"></th>
+                </thead>
+                <tr class="filas">
+                    <td class="columnas">01</td>
+                    <td class="columnas">PROGRAMACION WEB</td>
+                    <td class="columnas"><a href="./Asistencia.html">Entrar</a></td>
+                </tr>
+                <tr class="filas">
+                    <td class="columnas">02</td>
+                    <td class="columnas">ALGORITMOS</td>
+                    <td class="columnas"><a>Entrar</a></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<script src="./Js/main.js"></script>
