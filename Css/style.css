@@ -71,10 +71,6 @@
     width: 85%;
 }
 
-.botones-login{
- 
-}
-
 .entrar{
     width: 40%;
     height: 35px;
@@ -109,6 +105,7 @@
     position: fixed;
     width: 100%;
     height: 50px;
+    padding: 10px 0;
     z-index: 999;
     background-color: #444791;
     color: #fff;
@@ -147,6 +144,7 @@
 .boton-info{
     background-color: transparent;
     border: none;
+    padding: 10px 8px 10px 8px;
 }
 
 .boton-info:hover{
@@ -174,11 +172,6 @@
 
 }
 
-
-.foto-usuario{
-    
-}
-
 .info-Usuario-container{
     margin: 0 10px 0 10px;
 }
@@ -196,10 +189,6 @@
    margin-right: 8px
 }
 
-.opcion-usuario{
-   
-}
-
 .opcion-usuario > li{
     margin-left: 20px;
     padding: 10px 20px 10px 20px;
@@ -213,6 +202,41 @@
     color: initial;
 }
 
+.container-flotante{
+    order: -1;
+    position: absolute;
+    top: 70px;
+    height: 100vh;
+    width: 5%;
+    color: black;
+    overflow: none;
+    box-shadow: -10px 0px 10px -5px #d0d8dd inset;
+    background-color: #eaeef1;
+    box-sizing: border-box;
+}
+
+.container-flotante-listaNavegacion{
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-flotante-listaNavegacion > a{
+    display: inherit;
+    text-decoration: none;
+}
+
+.container-flotante-listaNavegacion > a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.icon{
+    font-size: 40px !important;
+}
+
 .container-principal{
     position: relative;
     display: flex;
@@ -224,7 +248,7 @@
     display: flex;
     position: absolute;
     width: 95%;
-    top: 70px;
+    top: 102px;
     justify-content: space-between;
     align-items: center;
     margin-left: 42px;
@@ -257,7 +281,7 @@
     display: none;
     position: absolute;
     z-index: 888;
-    top: 17%;
+    top: 21.5%;
     left: 58%;
     width: 510px;
     height: 180px;
@@ -344,46 +368,10 @@
     border-radius: 0.8rem;
 }
 
-.container-flotante{
-    order: -1;
-    position: absolute;
-    top: 50px;
-    height: 100vh;
-    width: 5%;
-    color: black;
-    overflow: none;
-    box-shadow: -10px 0px 10px -5px #d0d8dd inset;
-    background-color: #eaeef1;
-    box-sizing: border-box;
-}
-
-.container-flotante-listaNavegacion{
-    display: flex;
-    height: inherit;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.container-flotante-listaNavegacion > a{
-    display: inherit;
-    text-decoration: none;
-}
-
-.container-flotante-listaNavegacion > a:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-.icon{
-    font-size: 40px !important;
-}
-
-
 .container-main{
     position: relative;
     margin: 0 auto 0 4%;
-    top: 109px;
+    top: 129px;
     height: 100vh;
     width: 95%;
 }
